@@ -1,0 +1,10 @@
+machine:
+  post:
+    - python web2py.py -a 1234 --nogui:
+        background: true
+    - sleep 5
+
+test
+  POST:
+    - python applications/circi/functests/functional_tests.py
+    - py.test -x -v -s applications/circi/tests/
