@@ -4,7 +4,7 @@ machine:
         background: true
     - sleep 5
 
-test
+test:
   post:
     - python applications/circi/functests/functional_tests.py
     - py.test -x -v -s applications/circi/tests/
