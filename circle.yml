@@ -1,10 +1,8 @@
-machine:
-  post:
+
+test:
+  pre:
     - python web2py.py -a 1234 --nogui:
         background: true
     - sleep 5
-
-test:
-  post:
-    - python applications/circi/functests/functional_tests.py
-    - py.test -x -v -s applications/circi/tests/
+  override:
+    - py.test -x -v -s applications/
