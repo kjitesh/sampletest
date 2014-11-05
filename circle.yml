@@ -5,4 +5,4 @@ test:
         background: true
     - sleep 5
   override:
-    - py.test -x -v -s applications/
+    - py.test applications/
