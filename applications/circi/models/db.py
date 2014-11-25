@@ -10,6 +10,7 @@
 # request.requires_https()
 
 from web2pytest import web2pytest
+from solr import Solr
 import os
 
 
